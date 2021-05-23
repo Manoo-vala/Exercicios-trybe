@@ -1,0 +1,27 @@
+.super-mario, .goomba, .bowser, .baloon {
+      width: 200px;
+      
+}
+.dialogue {
+    z-index: 2;
+    width: 50px vertical;
+    float: right;
+    
+}
+.marioxgoomba {
+    z-index: 1;
+    width: 50px;
+}
+.baloon, p {
+    position: absolute;
+    left: 68%;
+    top: 95%;
+    
+}
+.baloon {
+  z-index: 1;
+}
+p {
+  z-index: 2;
+  top: 98%;
+}
