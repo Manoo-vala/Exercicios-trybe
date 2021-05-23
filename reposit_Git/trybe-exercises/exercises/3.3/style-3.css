@@ -1,0 +1,37 @@
+.diveira:hover {
+  border:goldenrod solid;
+}
+.diveira2:hover {
+  border:goldenrod solid;
+}
+.diveira3:hover {
+  border:goldenrod solid;
+}
+.diveira4:hover {
+  border:goldenrod solid;
+}
+.diveira5:hover {
+  border:goldenrod solid;
+}
+.diveira {
+  background-color: maroon;
+  font-style: oblique;
+}
+.diveira2 {
+  background-color: mediumaquamarine;
+  color: blue;
+}
+.diveira3 {
+  background-color: mediumblue;
+  color: crimson;
+  font-size: 20px;
+  padding: 20px;
+}
+.diveira4 {
+  background-color: mediumorchid;
+  color: darkblue;
+}
+.diveira5 {
+  background-color: mediumpurple;
+  color: aliceblue;
+}
