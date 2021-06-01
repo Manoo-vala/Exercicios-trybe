@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // h1
+      const titulo = document.createElement('h1');
+      titulo.innerHTML = "Exercício 5.2 - JavaScript DOM"
+      document.body.appendChild(titulo);
+
+      // tagDIV
+      const tagDiv = document.createElement('div');
+      tagDiv.className('main-content');
+      body.appendChild(tagDiv);
+
+      // centerContent
+      const centerDiv = document.createElement('div');
+      centerDiv.className('center-content');
+      tagDiv.appendChild(centerDiv);
+
+      // paragrafo
+      const paragraph = document.createElement('p');
+      paragraph.innerHTML('Oi, eu sou o Goku!');
+      tagDiv.appendChild(paragraph);
+
+      // leftcontent
+      const left = document.createElement('div');
+      left.id = 'left-content';
+      tagDiv.appendChild(left);
+
+      // rightcontent
+      const right = document.createElement('div');
+      right.id = 'right-content';
+      tagDiv.appendChild(right);
+
+      // image
+      const image = document.createElement('img');
+      image.src = "https://picsum.photos/200";
+      image.className = 'small-image';
+      left.appendChild('image');
+
+      // ul's
+      const listaDesordenada = document.createElement('ul');
+      right.appendChild('listaDesordenada');
+      const listaNumeros = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let num of listaNumeros) {
+        const elementosLI = document.createElement('li');
+        elementosLI.innerHTML = listaNumeros[num];
+        listaDesordenada.appendChild(elementosLI);
+      }
+
+      // 3 h3
+      for (let counter = 0; counter <= 3 ; counter += 1) {
+        const createh = document.createElement('h3');
+        createh.innerHTML = 'show ' + counter;
+        tagDiv.appendChild(createh);
+      }
+
+      // 
+    </script>
+  </body>
+</html>

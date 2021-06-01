@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
+    <div id="pai">
+      <div id="primeiroFilho"></div>
+      <div id="elementoOndeVoceEsta">
+        <div id="primeiroFilhoDoFilho"></div>
+        <div id="segundoEUltimoFilhoDoFilho"></div>
+      </div>
+      Atenção!
+      <div id="terceiroFilho"></div>
+      <div id="quartoEUltimoFilho"></div>
+    </div>
+  </div>
+  <script>
+    // Remova todos os elementos filhos de paiDoPai exceto pai,
+    // elementoOndeVoceEsta e primeiroFilhoDoFilho.
+    // COmo pai do pai não será eliminado, ele será ignorado.
+    const pai = document.getElementById('pai');
+    for (counter = pai.childNodes.length -1; counter >= 0; counter -= 1) {
+      const currentChild = pai.childNodes[counter];
+      if (currentChild.id != 'elementoOndeVoceEsta' || currentChild.id != 'primeiroFilhoDoFilho') {
+        currentChild.remove();
+      }
+    }
+    // Opcional
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+  </script>
+</body>
+</html>
