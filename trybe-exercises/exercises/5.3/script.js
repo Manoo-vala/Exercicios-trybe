@@ -104,3 +104,4 @@ function fridaysFunction(fridaysArray) {
 }
 let diasFriday = [ 4, 11, 18, 25 ];
 fridaysFunction(diasFriday);
+
