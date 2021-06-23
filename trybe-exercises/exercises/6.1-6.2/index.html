@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  <form action=""></form>
+    <div>
+      <header>
+        <h1>Formulário padrão</h1>
+        <p>Por favor, preencher tudo com atenção.</p>
+      </header>
+      <fieldset>
+        <p>Nome</p><input class="mb-3 type="text" name="nome" required maxlength="40">
+        <p>E-mail</p><input class="mb-3 type="text" name="email" required maxlength="50">
+        <p>CPF:</p><input class="mb-3 type="text" name="" required maxlength="11">
+        <p>Endereço:</p> <input class="mb-3 type="text" name="" required maxlength="200">
+        <p>Cidade:</p> <input class="mb-3 type="text" name="" required maxlength="28">
+        <p>Estado:</p> <Select>
+        <div class="form-check">
+        </Select>
+          <p>Tipo:</p> Casa<input type="radio" name="tipo" required value="Casa">
+          Apartamento<input type="radio" name="tipo" value="Apartamento">
+        </div>
+      </fieldset>
+    </div>
+    <div>
+     <fieldset>
+        <p>Resumo do currículo</p><input class="mb-3 type="textArea" name="" required maxlength="1000">
+        <p>Cargo</p><input class="mb-3 type="text" name="" required maxlength="50">
+        <p>Descrição do cargo</p><input class="mb-3 type="text" name="" required maxlength="500">
+        <p>Data de inicio</p><input class="mb-3 type="text" name="" id="date" required placeholder="dd/mm/aaaa">
+      </fieldset>
+    </div>
+    <div>
+      <button type="submit" class="">Enviar</button>
+      <button type="reset" class="">Limpar</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

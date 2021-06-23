@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+  * {
+    font-size: 1em;
+  }
+  body {
+    background-color: rgb(235, 122, 191);
+    display: flex;
+    margin-bottom: 50px;
+  }
+  header p {
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .navStyle {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .navStyle li {
+    margin-left: 12px;
+  }
+
+@media screen and (min-width: 600px){
+  body {
+    background-color: rgb(247, 57, 174);
+    display: flex;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(194, 25, 180);
+  }
+  .aside-one {
+    margin-left: 16px;
+  }
+}
